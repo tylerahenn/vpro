@@ -53,20 +53,6 @@ const navigation = [
       { name: "Moving Damage Repair", href: "/furniture-repair/moving-damage-furniture-repair" },
     ],
   },
-  {
-    name: "Locations",
-    href: "/locations",
-    children: [
-      { name: "Woofstock Park", href: "/locations/woofstock-park" },
-      { name: "Noonday Creek Park", href: "/locations/noonday-creek-park" },
-      { name: "Baker Elementary School", href: "/locations/baker-elementary-school" },
-      { name: "Town Center at Cobb", href: "/locations/town-center-at-cobb" },
-      { name: "Kennesaw State University", href: "/locations/kennesaw-state-university" },
-      { name: "Holly Springs Town Center", href: "/locations/holly-springs-town-center" },
-      { name: "Kennesaw Mountain", href: "/locations/kennesaw-mountain" },
-      { name: "Gibbs Gardens, Ball Ground", href: "/locations/gibbs-gardens" },
-    ],
-  },
   { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" },
 ];

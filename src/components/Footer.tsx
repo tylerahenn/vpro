@@ -162,6 +162,9 @@ export default function Footer() {
             <Link href="/about" className="text-white/40 hover:text-[#C9A327] transition-colors text-sm">
               About Us
             </Link>
+            <Link href="/locations" className="text-white/40 hover:text-[#C9A327] transition-colors text-sm">
+              Locations
+            </Link>
             <a href="/sitemap.xml" className="text-white/40 hover:text-[#C9A327] transition-colors text-sm">
               Sitemap
             </a>
