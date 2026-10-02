@@ -10,6 +10,11 @@ export const metadata: Metadata = {
 
 const locationPages = [
   {
+    name: "Town Center at Cobb",
+    href: "/locations/town-center-at-cobb",
+    desc: "Residential, automotive, and commercial leather repair around Town Center at Cobb and Barrett Parkway.",
+  },
+  {
     name: "Woofstock Park",
     href: "/locations/woofstock-park",
     desc: "Leather, vinyl, furniture, and car-seat repair near Dupree Road, Towne Lake Parkway, and Woofstock Park in Woodstock.",
@@ -23,11 +28,6 @@ const locationPages = [
     name: "Baker Elementary School",
     href: "/locations/baker-elementary-school",
     desc: "Leather and vinyl repair near Baker Elementary School, Baker Road, and the surrounding Acworth area.",
-  },
-  {
-    name: "Town Center at Cobb",
-    href: "/locations/town-center-at-cobb",
-    desc: "Residential, automotive, and commercial leather repair around Town Center at Cobb and Barrett Parkway.",
   },
   {
     name: "Kennesaw State University",
@@ -119,7 +119,7 @@ export default function LocationsPage() {
             <div className="prose prose-lg max-w-none text-gray-600">
               <p>
                 We have been repairing leather for families and businesses across
-                North Georgia for close to 20 years. Our shop is at 298 N Briar
+                North Georgia for more than 20 years. Our shop is at 298 N Briar
                 Ridge in Woodstock, but our work takes us all over the region.
                 From the growing communities in Cherokee County to the
                 established neighborhoods in Cobb County, we bring the same level
@@ -149,6 +149,14 @@ export default function LocationsPage() {
                   (770) 592-4689
                 </a>{" "}
                 to schedule a free assessment.
+              </p>
+
+              <p>
+                The location guides below use recognizable parks, schools,
+                shopping areas, and community destinations to describe the areas
+                we serve. They do not represent additional V-Pro offices. Each
+                guide explains relevant services, how to prepare for an estimate,
+                and when mobile service may be practical for the surrounding area.
               </p>
             </div>
           </div>
