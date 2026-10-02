@@ -3,7 +3,9 @@ import Link from "next/link";
 import LocationPageTemplate from "@/components/LocationPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Leather Repair Near Town Center at Cobb, Kennesaw | V-Pro",
+  title: {
+    absolute: "Leather Repair Near Town Center at Cobb, Kennesaw | V-Pro",
+  },
   description:
     "Leather repair near Town Center at Cobb and Barrett Parkway in Kennesaw for furniture, car seats, and commercial seating. Mobile service is available.",
 };
@@ -14,7 +16,7 @@ export default function TownCenterAtCobbPage() {
       landmark="Town Center at Cobb"
       city="Kennesaw"
       h1="Leather Repair Near Town Center at Cobb in Kennesaw"
-      intro="V-Pro provides leather, vinyl, and upholstery repair for customers near Town Center at Cobb, Barrett Parkway, and the surrounding Kennesaw commercial district."
+      intro="V-Pro provides mobile leather, vinyl, and upholstery repair near Town Center at Cobb in Kennesaw, serving homes, vehicles, and businesses along Barrett Parkway from its Woodstock shop."
       services={[
         {
           name: "Commercial Leather Repair",
@@ -33,11 +35,11 @@ export default function TownCenterAtCobbPage() {
         },
       ]}
       directions={[
-        "Leave the mall property on Mall Boulevard Northwest and turn onto Barrett Parkway.",
-        "Use the northbound ramp toward I-575 and continue on Phillip Landrum Memorial Highway.",
-        "Exit toward Bells Ferry Road and turn left to continue north on Bells Ferry Road Northwest.",
-        "Continue on Bells Ferry Road toward Woodstock, then turn left onto Black Oak Trail.",
-        "Turn left onto North Briar Ridge to reach 298 N Briar Ridge.",
+        "Leave the Town Center property on Mall Boulevard Northwest and turn left onto Barrett Parkway.",
+        "Use the connector for I-575 North toward Canton and merge onto Phillip Landrum Memorial Highway.",
+        "Take the Bells Ferry Road exit, then turn left to continue north on Bells Ferry Road Northwest.",
+        "Continue toward Woodstock and turn left onto Black Oak Trail.",
+        "Turn left onto North Briar Ridge; the published business address is 298 N Briar Ridge.",
       ]}
       directionsUrl="https://www.google.com/maps/dir/?api=1&origin=400+Ernest+W+Barrett+Parkway%2C+Kennesaw%2C+GA+30144&destination=298+N+Briar+Ridge%2C+Woodstock%2C+GA+30189"
       nearbyLocations={[
@@ -150,6 +152,13 @@ export default function TownCenterAtCobbPage() {
         suggesting a second V-Pro address. Kennesaw State University has its
         own page because Chastain Road and the campus create a distinct local
         reference and a different set of service questions.
+      </p>
+      <p>
+        The wider Town Center district is also connected by the Noonday Creek
+        Trail system toward Kennesaw State University and other familiar Cobb
+        County destinations. These landmarks help customers explain where a
+        mobile appointment would take place without implying that V-Pro has a
+        second shop in Kennesaw.
       </p>
       <p>
         Use Town Center at Cobb as the starting point when discussing the
