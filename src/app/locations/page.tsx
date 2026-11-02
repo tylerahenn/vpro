@@ -10,6 +10,26 @@ export const metadata: Metadata = {
 
 const locationPages = [
   {
+    name: "Carmel Elementary School",
+    href: "/locations/carmel-elementary-school",
+    desc: "Furniture and dining chair upholstery for Centennial Place, Bascomb Springs, and Bascomb Carmel Road in Woodstock.",
+  },
+  {
+    name: "Dupree Park",
+    href: "/locations/dupree-park",
+    desc: "Furniture reupholstery, leather restoration, and frame repair for Colony Woods and the Neese Road area in Woodstock.",
+  },
+  {
+    name: "Little River Falls",
+    href: "/locations/little-river-falls",
+    desc: "Furniture upholstery, new cushion foam, and dining chair recovery for Little River Falls and Arnold Mill Road in Woodstock.",
+  },
+  {
+    name: "Chestnut Hill, Acworth",
+    href: "/locations/chestnut-hill",
+    desc: "Home furniture, restaurant seating, and marine upholstery for Chestnut Hill and the Bells Ferry Road corridor in Acworth.",
+  },
+  {
     name: "Town Center at Cobb",
     href: "/locations/town-center-at-cobb",
     desc: "Residential, automotive, and commercial leather repair around Town Center at Cobb and Barrett Parkway.",
@@ -20,9 +40,9 @@ const locationPages = [
     desc: "Leather, vinyl, furniture, and car-seat repair near Dupree Road, Towne Lake Parkway, and Woofstock Park in Woodstock.",
   },
   {
-    name: "Noonday Creek Park",
+    name: "Noonday Park, Kennesaw",
     href: "/locations/noonday-creek-park",
-    desc: "Mobile and scheduled leather repair near Hawkins Store Road, Noonday Creek Park, and the Bells Ferry corridor.",
+    desc: "Furniture upholstery, vinyl seating, and leather repair near Noonday Park, serving Shiloh Hills, Arden Lake, and Glenlake in Kennesaw.",
   },
   {
     name: "Baker Elementary School",
@@ -152,11 +172,9 @@ export default function LocationsPage() {
               </p>
 
               <p>
-                The location guides below use recognizable parks, schools,
-                shopping areas, and community destinations to describe the areas
-                we serve. They do not represent additional V-Pro offices. Each
-                guide explains relevant services, how to prepare for an estimate,
-                and when mobile service may be practical for the surrounding area.
+                We also reupholster sofas, dining chairs, restaurant booths, and
+                boat seats. Explore our local service pages below for furniture
+                upholstery, leather repair, and mobile service in your area.
               </p>
             </div>
           </div>
@@ -174,8 +192,8 @@ export default function LocationsPage() {
               Landmarks and Neighborhoods We Serve
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              Click on any area below to learn more about our leather repair
-              services in your neighborhood.
+              Find furniture upholstery, leather repair, and seating services
+              for your neighborhood.
             </p>
           </div>
 

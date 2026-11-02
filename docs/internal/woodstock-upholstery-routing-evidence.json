@@ -1,0 +1,953 @@
+{
+  "researchDate": "2026-11-02",
+  "destination": {
+    "address": "298 N Briar Ridge, Woodstock, GA 30189",
+    "latitude": 34.1412982,
+    "longitude": -84.5901258,
+    "placeId": "ChIJyesV1bRCF2oRxTqYR9l-mAo"
+  },
+  "routes": [
+    {
+      "id": "carmel",
+      "sourceUrl": "https://router.project-osrm.org/route/v1/driving/-84.5702763,34.0965676;-84.5901258,34.1412982?steps=true&overview=false",
+      "status": "Ok",
+      "waypoints": [
+        {
+          "name": "",
+          "location": [
+            -84.569725,
+            34.096992
+          ],
+          "snapDistanceMeters": 69.27221326
+        },
+        {
+          "name": "North Briar Ridge",
+          "location": [
+            -84.590394,
+            34.141203
+          ],
+          "snapDistanceMeters": 26.87494766
+        }
+      ],
+      "steps": [
+        {
+          "road": "",
+          "maneuver": {
+            "bearing_after": 113,
+            "bearing_before": 0,
+            "location": [
+              -84.569725,
+              34.096992
+            ],
+            "modifier": "right",
+            "type": "depart"
+          },
+          "distanceMeters": 200.1
+        },
+        {
+          "road": "Bascomb Carmel Road",
+          "maneuver": {
+            "bearing_after": 293,
+            "bearing_before": 25,
+            "location": [
+              -84.568192,
+              34.098108
+            ],
+            "modifier": "left",
+            "type": "end of road"
+          },
+          "distanceMeters": 1635.3
+        },
+        {
+          "road": "Bells Ferry Road",
+          "maneuver": {
+            "bearing_after": 336,
+            "bearing_before": 320,
+            "location": [
+              -84.580863,
+              34.107996
+            ],
+            "modifier": "right",
+            "type": "turn"
+          },
+          "distanceMeters": 4210.8
+        },
+        {
+          "road": "Black Oak Trail",
+          "maneuver": {
+            "bearing_after": 239,
+            "bearing_before": 327,
+            "location": [
+              -84.588999,
+              34.142951
+            ],
+            "modifier": "left",
+            "type": "turn"
+          },
+          "distanceMeters": 207.7
+        },
+        {
+          "road": "North Briar Ridge",
+          "maneuver": {
+            "bearing_after": 147,
+            "bearing_before": 239,
+            "location": [
+              -84.590935,
+              34.141995
+            ],
+            "modifier": "left",
+            "type": "turn"
+          },
+          "distanceMeters": 101.2
+        },
+        {
+          "road": "North Briar Ridge",
+          "maneuver": {
+            "bearing_after": 0,
+            "bearing_before": 157,
+            "location": [
+              -84.590394,
+              34.141203
+            ],
+            "modifier": "left",
+            "type": "arrive"
+          },
+          "distanceMeters": 0
+        }
+      ]
+    },
+    {
+      "id": "dupree",
+      "sourceUrl": "https://router.project-osrm.org/route/v1/driving/-84.49293,34.10476;-84.5901258,34.1412982?steps=true&overview=false",
+      "status": "Ok",
+      "waypoints": [
+        {
+          "name": "",
+          "location": [
+            -84.492733,
+            34.104809
+          ],
+          "snapDistanceMeters": 18.96850474
+        },
+        {
+          "name": "North Briar Ridge",
+          "location": [
+            -84.590394,
+            34.141203
+          ],
+          "snapDistanceMeters": 26.87494766
+        }
+      ],
+      "steps": [
+        {
+          "road": "",
+          "maneuver": {
+            "bearing_after": 343,
+            "bearing_before": 0,
+            "location": [
+              -84.492733,
+              34.104809
+            ],
+            "modifier": "left",
+            "type": "depart"
+          },
+          "distanceMeters": 136.3
+        },
+        {
+          "road": "Neese Road",
+          "reference": "CR 378",
+          "maneuver": {
+            "bearing_after": 303,
+            "bearing_before": 232,
+            "location": [
+              -84.493845,
+              34.105164
+            ],
+            "modifier": "right",
+            "type": "end of road"
+          },
+          "distanceMeters": 348.2
+        },
+        {
+          "road": "Arnold Mill Road",
+          "reference": "CR 777",
+          "maneuver": {
+            "bearing_after": 234,
+            "bearing_before": 319,
+            "location": [
+              -84.497283,
+              34.106195
+            ],
+            "modifier": "left",
+            "type": "end of road"
+          },
+          "distanceMeters": 2162.9
+        },
+        {
+          "road": "Towne Lake Parkway",
+          "reference": "CR 416",
+          "maneuver": {
+            "bearing_after": 264,
+            "bearing_before": 268,
+            "location": [
+              -84.519223,
+              34.101318
+            ],
+            "modifier": "straight",
+            "type": "new name"
+          },
+          "distanceMeters": 433.6
+        },
+        {
+          "road": "Towne Lake Parkway",
+          "reference": "CR 416",
+          "maneuver": {
+            "exit": 2,
+            "bearing_after": 326,
+            "bearing_before": 293,
+            "location": [
+              -84.52377,
+              34.102212
+            ],
+            "modifier": "slight right",
+            "type": "roundabout"
+          },
+          "distanceMeters": 39
+        },
+        {
+          "road": "Towne Lake Parkway",
+          "reference": "CR 416",
+          "maneuver": {
+            "exit": 2,
+            "bearing_after": 236,
+            "bearing_before": 219,
+            "location": [
+              -84.524114,
+              34.102228
+            ],
+            "modifier": "straight",
+            "type": "exit roundabout"
+          },
+          "distanceMeters": 3047.6
+        },
+        {
+          "road": "Eagle Drive",
+          "maneuver": {
+            "bearing_after": 295,
+            "bearing_before": 300,
+            "location": [
+              -84.553694,
+              34.110751
+            ],
+            "modifier": "straight",
+            "type": "new name"
+          },
+          "distanceMeters": 2635.9
+        },
+        {
+          "road": "Bells Ferry Road",
+          "maneuver": {
+            "bearing_after": 278,
+            "bearing_before": 247,
+            "location": [
+              -84.581439,
+              34.112047
+            ],
+            "modifier": "right",
+            "type": "turn"
+          },
+          "distanceMeters": 3775.6
+        },
+        {
+          "road": "Black Oak Trail",
+          "maneuver": {
+            "bearing_after": 239,
+            "bearing_before": 327,
+            "location": [
+              -84.588999,
+              34.142951
+            ],
+            "modifier": "left",
+            "type": "turn"
+          },
+          "distanceMeters": 207.7
+        },
+        {
+          "road": "North Briar Ridge",
+          "maneuver": {
+            "bearing_after": 147,
+            "bearing_before": 239,
+            "location": [
+              -84.590935,
+              34.141995
+            ],
+            "modifier": "left",
+            "type": "turn"
+          },
+          "distanceMeters": 101.2
+        },
+        {
+          "road": "North Briar Ridge",
+          "maneuver": {
+            "bearing_after": 0,
+            "bearing_before": 157,
+            "location": [
+              -84.590394,
+              34.141203
+            ],
+            "modifier": "left",
+            "type": "arrive"
+          },
+          "distanceMeters": 0
+        }
+      ]
+    },
+    {
+      "id": "littleRiver",
+      "sourceUrl": "https://router.project-osrm.org/route/v1/driving/-84.4950602,34.11037;-84.5901258,34.1412982?steps=true&overview=false",
+      "status": "Ok",
+      "waypoints": [
+        {
+          "name": "",
+          "location": [
+            -84.495525,
+            34.110428
+          ],
+          "snapDistanceMeters": 43.37568091
+        },
+        {
+          "name": "North Briar Ridge",
+          "location": [
+            -84.590394,
+            34.141203
+          ],
+          "snapDistanceMeters": 26.87494766
+        }
+      ],
+      "steps": [
+        {
+          "road": "",
+          "maneuver": {
+            "bearing_after": 189,
+            "bearing_before": 0,
+            "location": [
+              -84.495525,
+              34.110428
+            ],
+            "modifier": "left",
+            "type": "depart"
+          },
+          "distanceMeters": 216.4
+        },
+        {
+          "road": "Arnold Mill Road",
+          "reference": "CR 777",
+          "maneuver": {
+            "bearing_after": 213,
+            "bearing_before": 127,
+            "location": [
+              -84.494749,
+              34.108827
+            ],
+            "modifier": "right",
+            "type": "end of road"
+          },
+          "distanceMeters": 2540.7
+        },
+        {
+          "road": "Towne Lake Parkway",
+          "reference": "CR 416",
+          "maneuver": {
+            "bearing_after": 264,
+            "bearing_before": 268,
+            "location": [
+              -84.519223,
+              34.101318
+            ],
+            "modifier": "straight",
+            "type": "new name"
+          },
+          "distanceMeters": 433.6
+        },
+        {
+          "road": "Towne Lake Parkway",
+          "reference": "CR 416",
+          "maneuver": {
+            "exit": 2,
+            "bearing_after": 326,
+            "bearing_before": 293,
+            "location": [
+              -84.52377,
+              34.102212
+            ],
+            "modifier": "slight right",
+            "type": "roundabout"
+          },
+          "distanceMeters": 39
+        },
+        {
+          "road": "Towne Lake Parkway",
+          "reference": "CR 416",
+          "maneuver": {
+            "exit": 2,
+            "bearing_after": 236,
+            "bearing_before": 219,
+            "location": [
+              -84.524114,
+              34.102228
+            ],
+            "modifier": "straight",
+            "type": "exit roundabout"
+          },
+          "distanceMeters": 3047.6
+        },
+        {
+          "road": "Eagle Drive",
+          "maneuver": {
+            "bearing_after": 295,
+            "bearing_before": 300,
+            "location": [
+              -84.553694,
+              34.110751
+            ],
+            "modifier": "straight",
+            "type": "new name"
+          },
+          "distanceMeters": 2635.9
+        },
+        {
+          "road": "Bells Ferry Road",
+          "maneuver": {
+            "bearing_after": 278,
+            "bearing_before": 247,
+            "location": [
+              -84.581439,
+              34.112047
+            ],
+            "modifier": "right",
+            "type": "turn"
+          },
+          "distanceMeters": 3775.6
+        },
+        {
+          "road": "Black Oak Trail",
+          "maneuver": {
+            "bearing_after": 239,
+            "bearing_before": 327,
+            "location": [
+              -84.588999,
+              34.142951
+            ],
+            "modifier": "left",
+            "type": "turn"
+          },
+          "distanceMeters": 207.7
+        },
+        {
+          "road": "North Briar Ridge",
+          "maneuver": {
+            "bearing_after": 147,
+            "bearing_before": 239,
+            "location": [
+              -84.590935,
+              34.141995
+            ],
+            "modifier": "left",
+            "type": "turn"
+          },
+          "distanceMeters": 101.2
+        },
+        {
+          "road": "North Briar Ridge",
+          "maneuver": {
+            "bearing_after": 0,
+            "bearing_before": 157,
+            "location": [
+              -84.590394,
+              34.141203
+            ],
+            "modifier": "left",
+            "type": "arrive"
+          },
+          "distanceMeters": 0
+        }
+      ]
+    },
+    {
+      "id": "chestnut",
+      "sourceUrl": "https://router.project-osrm.org/route/v1/driving/-84.570766,34.069821;-84.5901258,34.1412982?steps=true&overview=false",
+      "status": "Ok",
+      "waypoints": [
+        {
+          "name": "Mistflower Drive Northwest",
+          "location": [
+            -84.570781,
+            34.069648
+          ],
+          "snapDistanceMeters": 19.23969046
+        },
+        {
+          "name": "North Briar Ridge",
+          "location": [
+            -84.590394,
+            34.141203
+          ],
+          "snapDistanceMeters": 26.87494766
+        }
+      ],
+      "steps": [
+        {
+          "road": "Mistflower Drive Northwest",
+          "maneuver": {
+            "bearing_after": 94,
+            "bearing_before": 0,
+            "location": [
+              -84.570781,
+              34.069648
+            ],
+            "modifier": "left",
+            "type": "depart"
+          },
+          "distanceMeters": 132.8
+        },
+        {
+          "road": "Verbena Drive Northwest",
+          "maneuver": {
+            "bearing_after": 323,
+            "bearing_before": 52,
+            "location": [
+              -84.569503,
+              34.070063
+            ],
+            "modifier": "left",
+            "type": "end of road"
+          },
+          "distanceMeters": 89.8
+        },
+        {
+          "road": "Larkspur Boulevard Northwest",
+          "maneuver": {
+            "bearing_after": 61,
+            "bearing_before": 331,
+            "location": [
+              -84.570007,
+              34.070752
+            ],
+            "modifier": "right",
+            "type": "turn"
+          },
+          "distanceMeters": 58.4
+        },
+        {
+          "road": "Bells Ferry Road Northwest",
+          "maneuver": {
+            "bearing_after": 61,
+            "bearing_before": 61,
+            "location": [
+              -84.569424,
+              34.070951
+            ],
+            "modifier": "left",
+            "type": "turn"
+          },
+          "distanceMeters": 8784.3
+        },
+        {
+          "road": "Black Oak Trail",
+          "maneuver": {
+            "bearing_after": 239,
+            "bearing_before": 327,
+            "location": [
+              -84.588999,
+              34.142951
+            ],
+            "modifier": "left",
+            "type": "turn"
+          },
+          "distanceMeters": 207.7
+        },
+        {
+          "road": "North Briar Ridge",
+          "maneuver": {
+            "bearing_after": 147,
+            "bearing_before": 239,
+            "location": [
+              -84.590935,
+              34.141995
+            ],
+            "modifier": "left",
+            "type": "turn"
+          },
+          "distanceMeters": 101.2
+        },
+        {
+          "road": "North Briar Ridge",
+          "maneuver": {
+            "bearing_after": 0,
+            "bearing_before": 157,
+            "location": [
+              -84.590394,
+              34.141203
+            ],
+            "modifier": "left",
+            "type": "arrive"
+          },
+          "distanceMeters": 0
+        }
+      ]
+    },
+    {
+      "id": "noonday-alternate",
+      "sourceUrl": "https://routing.openstreetmap.de/routed-car/route/v1/driving/-84.5353246,34.0628029;-84.5901258,34.1412982?steps=true&overview=false",
+      "status": "Ok",
+      "waypoints": [
+        {
+          "name": "",
+          "location": [
+            -84.534695,
+            34.062492
+          ],
+          "snapDistanceMeters": 67.61380199
+        },
+        {
+          "name": "North Briar Ridge",
+          "location": [
+            -84.590394,
+            34.141203
+          ],
+          "snapDistanceMeters": 26.87494766
+        }
+      ],
+      "steps": [
+        {
+          "road": "",
+          "maneuver": {
+            "bearing_after": 31,
+            "bearing_before": 0,
+            "location": [
+              -84.534695,
+              34.062492
+            ],
+            "modifier": "left",
+            "type": "depart"
+          },
+          "distanceMeters": 704.2
+        },
+        {
+          "road": "Shallowford Road Northeast",
+          "maneuver": {
+            "bearing_after": 271,
+            "bearing_before": 7,
+            "location": [
+              -84.534019,
+              34.068261
+            ],
+            "modifier": "left",
+            "type": "end of road"
+          },
+          "distanceMeters": 1866.2
+        },
+        {
+          "road": "Shallowford Road Northwest",
+          "maneuver": {
+            "bearing_after": 216,
+            "bearing_before": 217,
+            "location": [
+              -84.551653,
+              34.066897
+            ],
+            "modifier": "straight",
+            "type": "new name"
+          },
+          "distanceMeters": 923.5
+        },
+        {
+          "road": "Bells Ferry Road Northwest",
+          "maneuver": {
+            "bearing_after": 338,
+            "bearing_before": 237,
+            "location": [
+              -84.559599,
+              34.06221
+            ],
+            "modifier": "right",
+            "type": "turn"
+          },
+          "distanceMeters": 10126.2
+        },
+        {
+          "road": "Black Oak Trail",
+          "maneuver": {
+            "bearing_after": 239,
+            "bearing_before": 327,
+            "location": [
+              -84.588999,
+              34.142951
+            ],
+            "modifier": "left",
+            "type": "turn"
+          },
+          "distanceMeters": 207.7
+        },
+        {
+          "road": "North Briar Ridge",
+          "maneuver": {
+            "bearing_after": 147,
+            "bearing_before": 239,
+            "location": [
+              -84.590935,
+              34.141995
+            ],
+            "modifier": "left",
+            "type": "turn"
+          },
+          "distanceMeters": 101.2
+        },
+        {
+          "road": "North Briar Ridge",
+          "maneuver": {
+            "bearing_after": 0,
+            "bearing_before": 157,
+            "location": [
+              -84.590394,
+              34.141203
+            ],
+            "modifier": "left",
+            "type": "arrive"
+          },
+          "distanceMeters": 0
+        }
+      ]
+    },
+    {
+      "id": "littleRiver-alternate",
+      "sourceUrl": "https://routing.openstreetmap.de/routed-car/route/v1/driving/-84.4950602,34.11037;-84.5901258,34.1412982?steps=true&overview=false",
+      "status": "Ok",
+      "waypoints": [
+        {
+          "name": "",
+          "location": [
+            -84.495525,
+            34.110428
+          ],
+          "snapDistanceMeters": 43.37568091
+        },
+        {
+          "name": "North Briar Ridge",
+          "location": [
+            -84.590394,
+            34.141203
+          ],
+          "snapDistanceMeters": 26.87494766
+        }
+      ],
+      "steps": [
+        {
+          "road": "",
+          "maneuver": {
+            "bearing_after": 189,
+            "bearing_before": 0,
+            "location": [
+              -84.495525,
+              34.110428
+            ],
+            "modifier": "left",
+            "type": "depart"
+          },
+          "distanceMeters": 216.4
+        },
+        {
+          "road": "Arnold Mill Road",
+          "reference": "CR 777",
+          "maneuver": {
+            "bearing_after": 213,
+            "bearing_before": 127,
+            "location": [
+              -84.494749,
+              34.108827
+            ],
+            "modifier": "right",
+            "type": "end of road"
+          },
+          "distanceMeters": 2540.7
+        },
+        {
+          "road": "Towne Lake Parkway",
+          "reference": "CR 416",
+          "maneuver": {
+            "bearing_after": 264,
+            "bearing_before": 268,
+            "location": [
+              -84.519223,
+              34.101318
+            ],
+            "modifier": "straight",
+            "type": "new name"
+          },
+          "distanceMeters": 433.6
+        },
+        {
+          "road": "Towne Lake Parkway",
+          "reference": "CR 416",
+          "maneuver": {
+            "exit": 2,
+            "bearing_after": 326,
+            "bearing_before": 293,
+            "location": [
+              -84.52377,
+              34.102212
+            ],
+            "modifier": "slight right",
+            "type": "roundabout"
+          },
+          "distanceMeters": 39
+        },
+        {
+          "road": "Towne Lake Parkway",
+          "reference": "CR 416",
+          "maneuver": {
+            "exit": 2,
+            "bearing_after": 236,
+            "bearing_before": 219,
+            "location": [
+              -84.524114,
+              34.102228
+            ],
+            "modifier": "straight",
+            "type": "exit roundabout"
+          },
+          "distanceMeters": 3047.6
+        },
+        {
+          "road": "Eagle Drive",
+          "maneuver": {
+            "bearing_after": 295,
+            "bearing_before": 300,
+            "location": [
+              -84.553694,
+              34.110751
+            ],
+            "modifier": "straight",
+            "type": "new name"
+          },
+          "distanceMeters": 2635.9
+        },
+        {
+          "road": "Bells Ferry Road",
+          "maneuver": {
+            "bearing_after": 278,
+            "bearing_before": 247,
+            "location": [
+              -84.581439,
+              34.112047
+            ],
+            "modifier": "right",
+            "type": "turn"
+          },
+          "distanceMeters": 3775.6
+        },
+        {
+          "road": "Black Oak Trail",
+          "maneuver": {
+            "bearing_after": 239,
+            "bearing_before": 327,
+            "location": [
+              -84.588999,
+              34.142951
+            ],
+            "modifier": "left",
+            "type": "turn"
+          },
+          "distanceMeters": 207.7
+        },
+        {
+          "road": "North Briar Ridge",
+          "maneuver": {
+            "bearing_after": 147,
+            "bearing_before": 239,
+            "location": [
+              -84.590935,
+              34.141995
+            ],
+            "modifier": "left",
+            "type": "turn"
+          },
+          "distanceMeters": 101.2
+        },
+        {
+          "road": "North Briar Ridge",
+          "maneuver": {
+            "bearing_after": 0,
+            "bearing_before": 157,
+            "location": [
+              -84.590394,
+              34.141203
+            ],
+            "modifier": "left",
+            "type": "arrive"
+          },
+          "distanceMeters": 0
+        }
+      ]
+    },
+    {
+      "id": "littleRiver-valhalla",
+      "sourceUrl": "https://valhalla1.openstreetmap.de/route?json=%7B%22locations%22%3A%5B%7B%22lat%22%3A34.11037%2C%22lon%22%3A-84.4950602%7D%2C%7B%22lat%22%3A34.1412982%2C%22lon%22%3A-84.5901258%7D%5D%2C%22costing%22%3A%22auto%22%2C%22directions_options%22%3A%7B%22units%22%3A%22miles%22%2C%22language%22%3A%22en-US%22%7D%7D",
+      "status": "Found route between points",
+      "alternateDirections": [
+        {
+          "instruction": "Drive south."
+        },
+        {
+          "instruction": "Turn right onto Arnold Mill Road/CR 777.",
+          "streetNames": [
+            "Arnold Mill Road",
+            "CR 777"
+          ]
+        },
+        {
+          "instruction": "Enter the roundabout and take the 2nd exit onto Towne Lake Parkway/CR 416."
+        },
+        {
+          "instruction": "Exit the roundabout onto Towne Lake Parkway/CR 416. Continue on Towne Lake Parkway.",
+          "streetNames": [
+            "Towne Lake Parkway"
+          ]
+        },
+        {
+          "instruction": "Turn right to stay on Towne Lake Parkway.",
+          "streetNames": [
+            "Towne Lake Parkway"
+          ]
+        },
+        {
+          "instruction": "Keep right to stay on Towne Lake Parkway.",
+          "streetNames": [
+            "Towne Lake Parkway"
+          ]
+        },
+        {
+          "instruction": "Bear right onto Bells Ferry Road.",
+          "streetNames": [
+            "Bells Ferry Road"
+          ]
+        },
+        {
+          "instruction": "Turn left onto Black Oak Trail.",
+          "streetNames": [
+            "Black Oak Trail"
+          ]
+        },
+        {
+          "instruction": "Turn left onto North Briar Ridge.",
+          "streetNames": [
+            "North Briar Ridge"
+          ]
+        },
+        {
+          "instruction": "Your destination is on the left."
+        }
+      ]
+    }
+  ]
+}

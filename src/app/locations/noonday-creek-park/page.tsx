@@ -1,153 +1,107 @@
-import { Metadata } from "next";
 import Link from "next/link";
-import LocationPageTemplate from "@/components/LocationPageTemplate";
+import UpholsteryLocationPage, {
+  upholsteryLocationMetadata,
+  vproDrivingDirections,
+} from "@/components/UpholsteryLocationPage";
 
-export const metadata: Metadata = {
-  title: "Leather Repair Near Noonday Creek Park, Kennesaw | V-Pro",
-  description:
-    "Mobile leather repair near Noonday Creek Park in Kennesaw for furniture, car seats, and commercial seating. Request a free assessment from V-Pro.",
-};
+const path = "/locations/noonday-creek-park";
+
+export const metadata = upholsteryLocationMetadata(
+  "Upholstery Near Noonday Park",
+  "Upholstery near Noonday Park in Kennesaw for homes and businesses around Shiloh Hills, Arden Lake, and Glenlake. Furniture and vinyl seating. Get a quote.",
+  path,
+);
 
 export default function NoondayCreekParkPage() {
   return (
-    <LocationPageTemplate
-      landmark="Noonday Creek Park"
+    <UpholsteryLocationPage
+      path={path}
+      areasServed={["Kennesaw, GA", "Shiloh Hills, Kennesaw, GA", "Arden Lake, Kennesaw, GA", "Glenlake, Kennesaw, GA"]}
+      landmark="Noonday Park"
       city="Kennesaw"
-      h1="Leather Repair Near Noonday Creek Park in Kennesaw"
-      intro="V-Pro provides mobile and scheduled leather repair for homes, vehicles, and businesses near Noonday Creek Park, Hawkins Store Road, and the Bells Ferry corridor."
+      h1="Upholstery Near Noonday Park in Kennesaw, GA"
+      intro="V-Pro Vinyl and Leather Repair provides upholstery near Noonday Park in Kennesaw, GA. We serve homes and businesses around Hawkins Store Road and Bells Ferry Road, including Shiloh Hills, Arden Lake, and Glenlake, with furniture reupholstery, vinyl seating work, and leather repair."
       services={[
-        {
-          name: "Leather Furniture Restoration",
-          href: "/leather-repair/leather-furniture-restoration",
-          description: "Assessment and restoration options for worn leather furniture.",
-        },
-        {
-          name: "Leather Scratch Repair",
-          href: "/leather-repair/leather-scratch-repair",
-          description: "Targeted repairs for scratches and damaged surface finishes.",
-        },
-        {
-          name: "Commercial Leather Repair",
-          href: "/leather-repair/commercial-leather-furniture-repair",
-          description: "Leather and vinyl seating care for nearby businesses.",
-        },
+        { name: "Upholstery Services", href: "/upholstery", description: "Furniture coverings, cushion replacement, and seating repairs." },
+        { name: "Commercial Upholstery", href: "/upholstery/commercial-upholstery", description: "Recover reception seating, restaurant furniture, and other business seating." },
+        { name: "Leather Furniture Restoration", href: "/leather-repair/leather-furniture-restoration", description: "Repair and restore suitable worn leather furniture." },
       ]}
+      directionsDescription="Our shop is at 298 N Briar Ridge, Woodstock, GA 30189. The route below leaves Noonday Park by its access road to Shallowford Road. Arrange a shop visit before bringing furniture. We also travel to Kennesaw customers for suitable mobile work."
       directions={[
-        "Leave Noonday Creek Park on Hawkins Store Road Northeast.",
-        "Turn right onto Bells Ferry Road Northwest.",
-        "Continue north on Bells Ferry Road toward Woodstock.",
-        "Turn left onto Black Oak Trail.",
-        "Turn left onto North Briar Ridge to reach 298 N Briar Ridge.",
+        "From Noonday Park, follow the park access road north to Shallowford Road Northeast and turn left.",
+        "Continue west on Shallowford Road as it becomes Shallowford Road Northwest, then turn right onto Bells Ferry Road Northwest.",
+        "Follow Bells Ferry Road north toward Woodstock, continuing past Highway 92.",
+        "Turn left onto Black Oak Trail, then left onto North Briar Ridge. Continue to 298 N Briar Ridge, Woodstock.",
       ]}
-      directionsUrl="https://www.google.com/maps/dir/?api=1&origin=489+Hawkins+Store+Road%2C+Kennesaw%2C+GA+30144&destination=298+N+Briar+Ridge%2C+Woodstock%2C+GA+30189"
+      directionsUrl={vproDrivingDirections("34.0628029,-84.5353246")}
       nearbyLocations={[
-        { name: "Woofstock Park", href: "/locations/woofstock-park" },
+        { name: "Chestnut Hill", href: "/locations/chestnut-hill" },
         { name: "Town Center at Cobb", href: "/locations/town-center-at-cobb" },
         { name: "Kennesaw State University", href: "/locations/kennesaw-state-university" },
+        { name: "Woofstock Park", href: "/locations/woofstock-park" },
       ]}
-      ctaTitle="Request Service Near Noonday Creek Park"
-      ctaDescription="Tell V-Pro what needs repair and send clear photos for a free assessment of the material, damage, and service options."
+      faqs={[
+        { question: "Do you serve Shiloh Hills, Arden Lake, and Glenlake?", answer: "Yes. We provide upholstery and furniture repair for these Kennesaw neighborhoods and the area around Noonday Park, Hawkins Store Road, and Bells Ferry Road. Our shop is in Woodstock, and mobile service is available for suitable work." },
+        { question: "Can you recover vinyl seating for a business?", answer: "Yes. We reupholster restaurant seating, reception chairs, and other commercial furniture, including suitable vinyl seating. We assess the existing covering and padding, then discuss materials and scheduling around your operation." },
+        { question: "Do you offer leather cleaning instead of reupholstery?", answer: "Yes. We clean and condition suitable leather furniture as well as repairing and restoring it. Cleaning does not replace missing material or repair torn upholstery, so we assess the leather before recommending cleaning, repair, or replacement covering." },
+      ]}
+      ctaTitle="Request Upholstery Near Noonday Park"
+      ctaDescription="Call (770) 592-4689 or use our contact form for a free quote on home furniture, commercial seating, or leather restoration."
     >
-      <h2>Serving the Noonday Creek Park and Bells Ferry Area</h2>
+      <h2>Upholstery for North Kennesaw Homes and Businesses</h2>
       <p>
-        Noonday Creek Park is a well-defined Cobb County landmark at 489
-        Hawkins Store Road. Its athletic fields, playgrounds, BMX track, and
-        connection to the Noonday Creek Trail make it a practical reference
-        point for the surrounding Kennesaw and northeast Cobb area. V-Pro
-        serves this corridor from Woodstock and offers mobile service for
-        suitable furniture, automotive, and commercial seating repairs.
-      </p>
-      <p>
-        The park&apos;s location near Bells Ferry Road provides a straightforward
-        connection toward Woodstock. Customers do not need to assume that every
-        item must be carried to the shop. For sofas, sectionals, and other large
-        pieces, start by sending photographs. V-Pro can review the size,
-        material, location of the damage, and access around the piece before
-        recommending mobile service or a scheduled shop visit.
-      </p>
-      <p>
-        Review the full range of{" "}
-        <Link href="/leather-repair">leather repair and restoration services</Link>
-        {" "}or return to the{" "}
-        <Link href="/locations">locations served from Woodstock</Link>
-        {" "}to compare coverage for nearby areas.
+        We serve the neighborhoods around Noonday Park, whose published address is
+        489 Hawkins Store Road, Kennesaw. For homes in Arden Lake and businesses
+        along the Bells Ferry corridor, our <Link href="/upholstery">upholstery
+        services</Link> cover new coverings, cushion work, and related furniture
+        repairs. We explain whether the item needs shop work or is suitable for
+        mobile service before scheduling.
       </p>
 
-      <h2>Choosing the Right Repair for the Material</h2>
+      <h2>Recover Furniture and Commercial Seating</h2>
+      <h3>Replace Worn Home Upholstery</h3>
       <p>
-        Furniture and vehicle interiors can contain genuine leather, coated
-        leather, bonded material, vinyl, or a combination of surfaces on the
-        same item. That difference affects preparation and repair choices. A
-        peeling bonded surface is not the same problem as a scratch in a
-        pigmented leather finish, and a split beside a seam may need a different
-        approach from isolated color loss.
+        We reupholster sofas, accent chairs, ottomans, and <Link href="/upholstery/dining-chair-upholstery">dining
+        chair seats</Link>. New foam can be included when cushions have lost
+        support. If the frame is loose, we also offer <Link href="/furniture-repair/furniture-regluing">furniture
+        regluing</Link>. We look at the whole item so the work addresses its comfort
+        and structure as well as its appearance.
       </p>
+      <h3>Recover Reception Chairs and Business Seating</h3>
       <p>
-        Send a photo of any manufacturer label when one is available, but do
-        not worry if the material is unknown. Include a wide image showing the
-        entire item and close images in even lighting. V-Pro can use that
-        information to begin the assessment and explain what must be inspected
-        in person.
+        Our <Link href="/upholstery/commercial-upholstery">commercial upholstery service</Link>
+        {" "}includes reception furniture, restaurant seats, and other business seating.
+        We replace suitable fabric or vinyl coverings and worn padding. We discuss
+        the number of items, material requirements, and whether work can be staged
+        around your opening hours. We also provide <Link href="/leather-repair/commercial-leather-furniture-repair">commercial
+        leather furniture repair</Link> when the covering can be kept.
       </p>
-
-      <h3>Residential Leather Furniture</h3>
+      <h3>Clean or Restore Leather You Want to Keep</h3>
       <p>
-        Common requests involve sofas, chairs, recliners, cushions, and
-        ottomans with worn finishes, scratches, fading, or tears. The useful
-        question is not simply whether the damage can be covered; it is whether
-        the surrounding material is stable enough for a repair to make sense.
-        V-Pro evaluates the damaged spot together with seams, flex points, and
-        nearby panels so the recommended scope reflects the condition of the
-        whole surface.
-      </p>
-      <p>
-        Mobile evaluation and service can reduce the handling required for a
-        large piece. Clear a workable area around the furniture and disclose
-        stairs, gated access, limited parking, or other practical constraints
-        when arranging the appointment. These details help plan the visit
-        without making assumptions about the property.
+        If leather is dirty but intact, <Link href="/leather-repair/leather-cleaning">professional
+        leather cleaning</Link> may be the service you need. For suitable <Link href="/leather-repair/leather-scratch-repair">scratches</Link>,
+        tears, fading, or finish wear, we also provide <Link href="/leather-repair/leather-furniture-restoration">leather
+        furniture restoration</Link>. We assess the material first because cleaning,
+        surface repair, and complete reupholstery solve different problems. See our
+        <Link href="/leather-repair"> leather repair services</Link> for other options.
       </p>
 
-      <h3>Automotive and Commercial Seating</h3>
+      <h2>Choose Seating Materials You Can Maintain</h2>
       <p>
-        Car-seat bolsters and armrests can develop localized wear while the
-        remaining interior is still serviceable. Nearby offices, restaurants,
-        and other businesses may also have leather or vinyl seating that needs
-        focused attention. V-Pro&apos;s services include automotive leather repair
-        and commercial leather and upholstery work, subject to an assessment
-        of the item and material.
+        We help you compare the appearance and care requirements of fabric,
+        leather, and vinyl. For business seating, we take routine cleaning and
+        frequency of use into account. For home furniture, we discuss texture,
+        comfort, and the finish you want. A covering should suit the furniture
+        and its use; no single material is the right choice for every room or
+        type of seat.
       </p>
       <p>
-        For a vehicle, provide the year, make, model, and photographs of the
-        complete seat and damaged panel. For commercial seating, include the
-        number and type of pieces, representative damage, and any scheduling or
-        access limitations. This allows V-Pro to determine whether the request
-        belongs in a residential, automotive, or commercial workflow.
+        Request a quote by phone or through our contact form. Tell us what needs
+        work and include photos if available. We review the furniture, explain
+        material and repair options, and agree on scheduling before the job
+        begins. Visit our <Link href="/locations">locations hub</Link> for other
+        communities served from Woodstock.
       </p>
-
-      <h2>A Local Reference Without a False Local Office</h2>
-      <p>
-        This page uses Noonday Creek Park to describe a real service area; it
-        does not imply that V-Pro has an office inside the park or elsewhere in
-        Kennesaw. The verified business address is in Woodstock. Mobile service
-        is available across the stated coverage area, and shop visits should be
-        arranged in advance.
-      </p>
-      <p>
-        Customers near Hawkins Store Road, Noonday Creek, and Bells Ferry Road
-        can identify the park when requesting service so the general location
-        is clear. The exact service recommendation still depends on the item,
-        damage, and appointment requirements.
-      </p>
-
-      <h2>What to Send With Your Quote Request</h2>
-      <ul>
-        <li>A full view of the furniture, seat, or commercial item.</li>
-        <li>Close photographs showing texture, edges, and adjacent seams.</li>
-        <li>A description of when the damage appeared and whether it is spreading.</li>
-        <li>Details about products or DIY repairs previously applied.</li>
-        <li>Your location near Noonday Creek Park and preferred service option.</li>
-      </ul>
-    </LocationPageTemplate>
+    </UpholsteryLocationPage>
   );
 }

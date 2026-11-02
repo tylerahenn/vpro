@@ -25,6 +25,10 @@ type LocationPageTemplateProps = {
   nearbyLocations: NearbyLink[];
   ctaTitle: string;
   ctaDescription: string;
+  serviceName?: string;
+  directionsDescription?: string;
+  showInlineQuote?: boolean;
+  faqs?: { question: string; answer: string }[];
 };
 
 export default function LocationPageTemplate({
@@ -39,6 +43,10 @@ export default function LocationPageTemplate({
   nearbyLocations,
   ctaTitle,
   ctaDescription,
+  serviceName = "Leather Repair",
+  directionsDescription,
+  showInlineQuote = true,
+  faqs = [],
 }: LocationPageTemplateProps) {
   const contentSections: ReactNode[][] = [];
 
@@ -153,6 +161,18 @@ export default function LocationPageTemplate({
                 </section>
               ))}
 
+              {faqs.length > 0 && (
+                <section className="location-rich-text rounded-3xl border border-gray-200 bg-white p-6 shadow-sm md:p-10">
+                  <h2>{serviceName} Questions</h2>
+                  {faqs.map(({ question, answer }) => (
+                    <div key={question}>
+                      <h3>{question}</h3>
+                      <p>{answer}</p>
+                    </div>
+                  ))}
+                </section>
+              )}
+
               <section className="rounded-3xl border border-[#C9A327]/30 bg-[#fffaf0] p-6 md:p-10">
                 <div className="mb-6 flex items-start gap-4">
                   <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#C9A327] text-black">
@@ -182,12 +202,12 @@ export default function LocationPageTemplate({
                   </div>
                 </div>
                 <p className="mb-7 text-[1.0625rem] leading-8 text-gray-600">
-                  V-Pro offers mobile service in the {city} area, so large furniture often does not
+                  {directionsDescription ?? <>V-Pro offers mobile service in the {city} area, so large furniture often does not
                   need to be transported. Customers who arrange a shop visit can use the published
                   business address at 298 N Briar Ridge, Woodstock, GA 30189. Confirm your appointment
-                  before setting out.
+                  before setting out.</>}
                 </p>
-                <ol className="grid gap-3">
+                {directions.length > 0 && <ol className="grid gap-3">
                   {directions.map((direction, index) => (
                     <li
                       key={direction}
@@ -199,7 +219,7 @@ export default function LocationPageTemplate({
                       <span className="pt-0.5 leading-6">{direction}</span>
                     </li>
                   ))}
-                </ol>
+                </ol>}
                 <p className="mt-6 text-sm leading-6 text-gray-500">
                   Road conditions and turn restrictions can change. Check the{" "}
                   <a
@@ -214,12 +234,12 @@ export default function LocationPageTemplate({
                 </p>
               </section>
 
-              <section className="overflow-hidden rounded-3xl bg-black p-6 text-white shadow-xl md:p-10">
+              {showInlineQuote && <section className="overflow-hidden rounded-3xl bg-black p-6 text-white shadow-xl md:p-10">
                 <p className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-[#C9A327]">
                   Ready to get started?
                 </p>
                 <h2 className="mb-4 text-2xl font-bold md:text-3xl">
-                  Request Leather Repair in the {landmark} Area
+                  Request {serviceName} in the {landmark} Area
                 </h2>
                 <p className="max-w-2xl text-[1.0625rem] leading-8 text-white/70">
                   Send clear photos of the full item and the damaged area when requesting an
@@ -240,7 +260,7 @@ export default function LocationPageTemplate({
                     (770) 592-4689
                   </a>
                 </div>
-              </section>
+              </section>}
             </article>
 
             <aside className="lg:col-span-1">
@@ -326,6 +346,22 @@ export default function LocationPageTemplate({
       </section>
 
       <CTASection title={ctaTitle} description={ctaDescription} />
+      {faqs.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: faqs.map(({ question, answer }) => ({
+                "@type": "Question",
+                name: question,
+                acceptedAnswer: { "@type": "Answer", text: answer },
+              })),
+            }).replace(/</g, "\\u003c"),
+          }}
+        />
+      )}
     </>
   );
 }
